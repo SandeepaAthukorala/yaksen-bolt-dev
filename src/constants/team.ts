@@ -3,7 +3,7 @@ export const team = [
     id: 'sandeepa-dilshan',
     name: 'Sandeepa Dilshan',
     role: 'Co-Founder & AI Researcher',
-    image: '/src/team/sandeepa.png',
+    image: '/src/assets/sandeepa.png',
     email: 'sandeepa@yaksen.com',
     about: 'Leading AI researcher with over 8 years of experience in machine learning and deep learning. Passionate about pushing the boundaries of AI technology and its practical applications in business.',
     expertise: [
@@ -42,7 +42,7 @@ export const team = [
     id: 'bevan-chandupa',
     name: 'Bevan Chandupa',
     role: 'Co-Founder & AI Content Creator',
-    image: '/src/team/bevan.jpg',
+    image: '/src/assets/bevan.jpg',
     email: 'bevan@yaksen.com',
     about: 'Creative technologist specializing in AI-driven content creation and digital marketing. Combines artistic vision with technical expertise to deliver innovative solutions.',
     expertise: [
@@ -81,7 +81,7 @@ export const team = [
     id: 'dhaham-gimhana',
     name: 'Dhaham Gimhana',
     role: 'AI Systems Developer',
-    image: '/src/team/dhaham.jpg',
+    image: '/src/assets/dhaham.jpg',
     email: 'dhaham@yaksen.com',
     about: 'Expert systems developer with a focus on scalable AI infrastructure. Specializes in building robust and efficient AI systems that drive business value.',
     expertise: [
