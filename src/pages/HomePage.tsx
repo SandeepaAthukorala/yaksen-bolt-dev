@@ -13,6 +13,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
       <Navbar />
+      hi 123
       <Hero />
       <About />
       <Services />
