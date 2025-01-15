@@ -1,44 +1,33 @@
-import React from 'react';
-import { Brain, Bot, Cpu, Network, Database, LineChart } from 'lucide-react';
-import TechnologyCard from './technology/TechnologyCard';
+import React from "react";
+import { Brain, Bot, Cpu, Network, Database, LineChart } from "lucide-react";
+import TechnologyCard from "./technology/TechnologyCard";
+import TechCardNew from "./technology/TechCardNew";
+import { FaPython } from "react-icons/fa";
+import { SiTensorflow } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { FaAws } from "react-icons/fa";
+import { SiFastapi } from "react-icons/si";
+import { SiNextdotjs } from "react-icons/si";
 
 const technologies = [
   {
-    icon: Brain,
-    name: 'Natural Language Processing',
-    description: 'Advanced NLP algorithms for content generation and analysis',
-    tags: ['GPT-4', 'BERT', 'Transformers']
+    icon: <FaPython className="text-primary text-[90px]" />,
   },
   {
-    icon: Bot,
-    name: 'Machine Learning',
-    description: 'Predictive analytics and pattern recognition',
-    tags: ['TensorFlow', 'PyTorch', 'Scikit-learn']
+    icon: <SiTensorflow className="text-primary text-[90px]" />,
   },
   {
-    icon: Cpu,
-    name: 'Deep Learning',
-    description: 'Neural networks for complex decision making',
-    tags: ['CNN', 'RNN', 'LSTM']
+    icon: <SiNextdotjs className="text-primary text-[90px]" />,
   },
   {
-    icon: Network,
-    name: 'Computer Vision',
-    description: 'Image and video analysis for visual content',
-    tags: ['OpenCV', 'YOLO', 'ResNet']
+    icon: <FaReact className="text-primary text-[90px]" />,
   },
   {
-    icon: Database,
-    name: 'Big Data Analytics',
-    description: 'Processing large-scale marketing data',
-    tags: ['Hadoop', 'Spark', 'MongoDB']
+    icon: <FaAws className="text-primary text-[90px]" />,
   },
   {
-    icon: LineChart,
-    name: 'Predictive Analytics',
-    description: 'Future trend prediction and insights',
-    tags: ['R', 'Python', 'Julia']
-  }
+    icon: <SiFastapi className="text-primary text-[90px]" />,
+  },
 ];
 
 export default function Technologies() {
@@ -50,14 +39,22 @@ export default function Technologies() {
             Our Technologies
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500 dark:text-gray-400">
-            Cutting-edge AI technologies powering your success
+            Cutting-edge technologies powering your success
           </p>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        {/* <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {technologies.map((tech) => (
             <TechnologyCard key={tech.name} technology={tech} />
           ))}
+        </div> */}
+
+        <div className="flex  w-full justify-center items-center mt-20">
+          <div className="flex flex-wrap items-center justify-center gap-14 ">
+            {technologies.map((icon) => (
+              <TechCardNew icon={icon.icon} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
